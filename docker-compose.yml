@@ -1,0 +1,19 @@
+kibana:
+  image: kibana
+  ports:
+    - 5601:5601
+  links:
+    - elasticsearch
+  volumes:
+    - /mnt/elasticsearch-data:/usr/share/elasticsearch/data
+elasticsearch:
+  image: elasticsearch
+  ports:
+    - 9200:9200
+    - 9300:9300
+fluentd:
+  image: fluent/fluentd
+  ports:
+    - 24224:24224
+  links:
+    - elasticsearch
