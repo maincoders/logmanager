@@ -1,5 +1,6 @@
-## Log aggregation using Fluentd, Elasticsearch and Kibana in Docker
+## Log aggregation using Fluentd, Elasticsearch and Kibana
 
+Inspired by http://docs.fluentd.org/articles/free-alternative-to-splunk-by-fluentd
 
 ## Running locally via docker
 
